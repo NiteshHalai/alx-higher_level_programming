@@ -3,8 +3,5 @@ from add_0 import add
 
 a = 1
 b = 2
-added = add(a, b)
 
-to_print = "{} + {} = {}"
-
-print(to_print.format(a, b, added))
+print("{} + {} = {}".format(a, b, add(a, b)))
