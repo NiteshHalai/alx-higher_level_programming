@@ -3,24 +3,24 @@ if __name__ == "__main__":
     import sys
     from calculator_1 import add, sub, mul, div
 
-arguments = sys.argv
+a = sys.argv
 operators = ['+', '-', '*', '/']
 
-if len(arguments) != 4:
+if len(a) != 4:
     print("Usage: ./100-my_calculator.py <a> <operator> <b>")
     exit(1)
-if arguments[2] not in operators:
+if a[2] not in operators:
     print("Unknown operator. Available operators: +, -, * and /")
     exit(1)
-if arguments[2] == '+':
-    print("{} + {} = {}".format(arguments[1], arguments[3], add(int(arguments[1]),int(arguments[3]))))
+if a[2] == '+':
+    print("{} + {} = {}".format(a[1], a[3], add(int(a[1]),int(a[3]))))
     exit(0)
-if arguments[2] == '-':
-    print("{} - {} = {}".format(arguments[1], arguments[3], sub(int(arguments[1]),int(arguments[3]))))
+if a[2] == '-':
+    print("{} - {} = {}".format(a[1], a[3], sub(int(a[1]),int(a[3]))))
     exit(0)
-if arguments[2] == '*':
-    print("{} * {} = {}".format(arguments[1], arguments[3], mul(int(arguments[1]),int(arguments[3]))))
+if a[2] == '*':
+    print("{} * {} = {}".format(a[1], a[3], mul(int(a[1]),int(a[3]))))
     exit(0)
-if arguments[2] == '/':
-    print("{} / {} = {}".format(arguments[1], arguments[3], div(int(arguments[1]),int(arguments[3]))))
+if a[2] == '/':
+    print("{} / {} = {}".format(a[1], a[3], div(int(a[1]),int(a[3]))))
     exit(0)
