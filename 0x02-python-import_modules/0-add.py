@@ -3,8 +3,8 @@ from add_0 import add
 
 a = 1
 b = 2
-added = a + b
+added = add(a, b)
 
-to_print = "{} + {} =  {}"
+to_print = "{} + {} = {}"
 
 print(to_print.format(a, b, added))
