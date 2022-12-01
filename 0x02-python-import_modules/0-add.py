@@ -3,7 +3,8 @@ from add_0 import add
 
 a = 1
 b = 2
+added = a + b
 
-sum = add(a,b)
+to_print = "{} + {} =  {added}"
 
-print(sum.format())
+print(to_print.format(a, b, added))
