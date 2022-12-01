@@ -10,6 +10,6 @@ elif len(arguments) == 2:
     print("1 argument:")
     print("1: {}".format(arguments[1]))
 else:
-    print("{} arguments:".format(len(arguments)))
+    print("{} arguments:".format(len(arguments) - 1))
     for i in range(0, len(arguments)):
-        print("{}: {}".format(i, arguments[i]))
+        print("{}: {}".format(i + 1, arguments[i + 1]))
