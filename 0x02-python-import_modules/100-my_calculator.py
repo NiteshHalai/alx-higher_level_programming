@@ -7,4 +7,4 @@ arguments = sys.argv
 
 if len(arguments) != 4:
     print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-    print(1)
+    exit(1)
