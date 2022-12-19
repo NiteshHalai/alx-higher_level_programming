@@ -4,6 +4,7 @@ def safe_print_integer(value):
         print(value+0)
         return True
     except:
-        return False
         break
+        return False
+        
     
