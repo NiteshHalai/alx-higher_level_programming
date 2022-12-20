@@ -26,7 +26,7 @@ class Square:
         return self.area
 
     def my_print(self):
-        for i in range (0, self.__size):
-            for i in range (0, self.__size):
-                print('#', end ='')
+        for i in range(0, self.__size):
+            for i in range(0, self.__size):
+                print('#', end = '')
             print('')
