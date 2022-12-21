@@ -41,11 +41,3 @@ class Square:
             for i in range(0, self.__size):
                 print('#', end='')
             print('')
-
-     def __str__(self):
-        for i in range(0, self.__size):
-            for i in range(0, self.__position[0]):
-                print(' ', end='')
-            for i in range(0, self.__size):
-                print('#', end='')
-            print('')
