@@ -80,3 +80,4 @@ class Rectangle:
             for i in range(0, self.__width):
                 print('#', end='')
             print('')
+        return ""
