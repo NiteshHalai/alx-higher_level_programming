@@ -83,3 +83,6 @@ class Rectangle:
         for i in range(0, self.__height):
             a.append('#' * self.__width)
         return "\n".join(a)
+
+    def __del__(self):
+        print('Bye rectangle...')
