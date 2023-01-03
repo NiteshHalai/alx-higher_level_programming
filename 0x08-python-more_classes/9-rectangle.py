@@ -86,6 +86,10 @@ class Rectangle:
         if rect_1.area() < rect_2.area():
             return rect_2
 
+    @classmethod
+    def square(cls, size=0):
+        return cls(width, height)
+
     def __repr__(self):
         return "Rectangle(%r, %r)" % (self.__width, self.__height)
 
