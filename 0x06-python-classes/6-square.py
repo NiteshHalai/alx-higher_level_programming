@@ -11,8 +11,18 @@ class Square:
     """
 
     def __init__(self, size=0, position=(0, 0)):
-        self.__size = size
         self.__position = position
+
+        try:
+            self.__size = size
+            if size < 0:
+                raise ValueError
+            if type(size) is not int:
+                raise TypeError
+        except TypeError:
+            raise TypeError("size must be an integer")
+        except ValueError:
+            raise ValueError("size must be >= 0")
 
     @property
     def size(self):
@@ -20,7 +30,16 @@ class Square:
 
     @size.setter
     def size(self, value):
-        self.__size = value
+        try:
+            self.__size = value
+            if value < 0:
+                raise ValueError
+            if type(value) is not int:
+                raise TypeError
+        except TypeError:
+            raise TypeError("size must be an integer")
+        except ValueError:
+            raise ValueError("size must be >= 0")
 
     @property
     def position(self):
