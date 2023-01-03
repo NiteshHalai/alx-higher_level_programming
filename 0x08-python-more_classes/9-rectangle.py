@@ -88,7 +88,7 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        return cls(width, height)
+        return cls(size, size)
 
     def __repr__(self):
         return "Rectangle(%r, %r)" % (self.__width, self.__height)
