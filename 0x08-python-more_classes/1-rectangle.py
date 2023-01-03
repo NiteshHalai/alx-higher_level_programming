@@ -38,17 +38,18 @@ class Rectangle:
             raise TypeError("width must be an integer")
         except ValueError:
             raise ValueError("width must be >= 0")
-            
-         try:
-            self.__height = height
-            if height < 0:
-                raise ValueError
-            if type(height) is not int:
-                raise TypeError
-        except TypeError:
-            raise TypeError("height must be an integer")
-        except ValueError:
-            raise ValueError("height must be >= 0")
+           
+        
+    try:
+        self.__height = height
+        if height < 0:
+            raise ValueError
+        if type(height) is not int:
+            raise TypeError
+    except TypeError:
+        raise TypeError("height must be an integer")
+    except ValueError:
+        raise ValueError("height must be >= 0")
 
     @property
     def height(self):
