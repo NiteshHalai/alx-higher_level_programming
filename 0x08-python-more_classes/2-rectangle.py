@@ -66,7 +66,7 @@ class Rectangle:
             raise TypeError("height must be an integer")
         except ValueError:
             raise ValueError("height must be >= 0")
-            
+
     def area(self):
         self.area = self.__width * self.__height
         return self.area
