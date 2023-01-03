@@ -83,7 +83,7 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        if getattr(rect_1, 'area') < getattr(rect_2, 'area'):
+        if rect1.area() < rect2.area():
             return rect_2
 
     def __repr__(self):
