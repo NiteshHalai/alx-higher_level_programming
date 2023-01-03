@@ -12,7 +12,7 @@ class Rectangle:
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
-        
+
         try:
             self.__width = width
             if width < 0:
@@ -34,8 +34,8 @@ class Rectangle:
             raise TypeError("height must be an integer")
         except ValueError:
             raise ValueError("height must be >= 0")
-            
-        Rectangle.number_of_instances =+ 1
+
+        Rectangle.number_of_instances = + 1
         self.number_of_instances = Rectangle.number_of_instances
         self.print_symbol = '#'
 
@@ -91,5 +91,5 @@ class Rectangle:
         return "\n".join(a)
 
     def __del__(self):
-        Rectangle.number_of_instances =- 1
+        Rectangle.number_of_instances = - 1
         print('Bye rectangle...')
