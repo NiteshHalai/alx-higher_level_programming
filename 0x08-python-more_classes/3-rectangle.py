@@ -76,8 +76,9 @@ class Rectangle:
         return self.perimeter
 
     def __str__(self):
+        a = []
         for i in range(0, self.__height):
             for i in range(0, self.__width):
-                print('#', end='')
+                a.append('#')
             print('')
-        return ""
+        return "\n".join(a)
