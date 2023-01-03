@@ -75,7 +75,7 @@ class Rectangle:
         self.perimeter = self.__width * 2 + self.__height * 2
         return self.perimeter
 
-    def my_print(self):
+    def __str__(self):
         for i in range(0, self.__height):
             for i in range(0, self.__width):
                 print('#', end='')
