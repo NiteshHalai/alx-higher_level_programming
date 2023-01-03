@@ -75,7 +75,7 @@ class Rectangle:
 
     def area(self):
         self.area = self.__width * self.__height
-        return self.area
+        return self.areas
 
     def perimeter(self):
         self.perimeter = self.__width * 2 + self.__height * 2
@@ -83,7 +83,7 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        if max(rect_1.area(), rect_2.area()) == rect_2:
+        if rect_1.area() < rect_2.area():
             return rect_2
 
     def __repr__(self):
