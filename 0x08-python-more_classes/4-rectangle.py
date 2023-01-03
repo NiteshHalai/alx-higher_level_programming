@@ -75,6 +75,9 @@ class Rectangle:
         self.perimeter = self.__width * 2 + self.__height * 2
         return self.perimeter
 
+    def __repr__(self):
+        return "Rectangle(%r, %r)" % (self.__width, self.__height)
+    
     def __str__(self):
         a = []
         for i in range(0, self.__height):
