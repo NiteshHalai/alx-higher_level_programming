@@ -12,7 +12,6 @@ class Rectangle:
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
-        Rectangle.number_of_instances =+ 1
         
         try:
             self.__width = width
@@ -35,6 +34,9 @@ class Rectangle:
             raise TypeError("height must be an integer")
         except ValueError:
             raise ValueError("height must be >= 0")
+            
+        Rectangle.number_of_instances =+ 1
+        self.number_of_instances = Rectangle.number_of_instances
 
     @property
     def width(self):
