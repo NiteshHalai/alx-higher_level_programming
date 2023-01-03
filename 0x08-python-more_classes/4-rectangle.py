@@ -77,7 +77,7 @@ class Rectangle:
 
     def __repr__(self):
         return "Rectangle(%r, %r)" % (self.__width, self.__height)
-    
+
     def __str__(self):
         a = []
         for i in range(0, self.__height):
