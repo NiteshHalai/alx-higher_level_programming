@@ -78,7 +78,6 @@ class Rectangle:
     def __str__(self):
         a = []
         for i in range(0, self.__height):
-            for i in range(0, self.__width):
-                a.append('#')
+                a.append('#' * self.__width)
             print('')
         return "\n".join(a)
