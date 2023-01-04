@@ -9,21 +9,25 @@ This is an example text file in reStructuredText format.  First import
 
     >>> add_integer = __import__('0-add_integer').add_integer
 
+-------------------
 Now use it:
 
     >>> add_integer(1, 2)
     3
-    
+
+-------------------
 Now use it:    
 
     >> add_integer(100, -2)
     98
-    
+
+-------------------
 Now use it:    
 
     >> add_integer(2)
     100
     
+-------------------    
 Now use it:    
 
     >> add_integer(100.3, -2)
