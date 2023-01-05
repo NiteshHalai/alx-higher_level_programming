@@ -35,7 +35,7 @@ class Rectangle:
         except ValueError:
             raise ValueError("height must be >= 0")
 
-        Rectangle.number_of_instances = + 1
+        Rectangle.number_of_instances = Rectangle.number_of_instances + 1
         self.number_of_instances = Rectangle.number_of_instances
         self.print_symbol = '#'
 
@@ -96,5 +96,5 @@ class Rectangle:
         return "\n".join(a)
 
     def __del__(self):
-        Rectangle.number_of_instances = - 1
+        Rectangle.number_of_instances = Rectangle.number_of_instances - 1
         print('Bye rectangle...')
