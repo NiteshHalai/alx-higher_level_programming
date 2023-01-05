@@ -8,4 +8,4 @@ class LockedClass:
     """
     This is a LockedClass class
     """
-    pass
+    __slots__ = ['first_name']
