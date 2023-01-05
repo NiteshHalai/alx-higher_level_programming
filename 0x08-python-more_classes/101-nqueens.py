@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def nqueens():
+def nqueens(n):
     """My addition function
     Args:
         a: first integer
@@ -9,4 +9,5 @@ def nqueens():
     """
     argv = open('/proc/self/cmdline').read().split('\0')
     print(argv)
+    print(n)
     return (n)
