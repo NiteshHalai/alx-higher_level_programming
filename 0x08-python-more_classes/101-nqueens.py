@@ -7,4 +7,5 @@ def nqueens(n):
     Returns:
         The return value. a + b
     """
+    print(n)
     return (n)
