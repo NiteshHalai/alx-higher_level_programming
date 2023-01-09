@@ -16,4 +16,4 @@ class MyList(list):
     """
     
     def print_sorted(self):
-        class list sort()
+        return self.sorted()
