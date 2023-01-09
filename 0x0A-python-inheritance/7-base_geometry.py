@@ -15,7 +15,7 @@ class BaseGeometry:
         try:
             self.value = value
             self.name = name
-            if value =< 0:
+            if value <= 0:
                 raise ValueError
             if type(value) is not int:
                 raise TypeError
