@@ -5,4 +5,4 @@
 
 def inherits_from(obj, a_class):
     """Function description here"""
-    return issubclass(obj, a_class)
+    return isinstance(obj, a_class)
