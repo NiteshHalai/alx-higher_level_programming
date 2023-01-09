@@ -4,12 +4,6 @@ This is a class
 """
 
 
-class list:
-    """
-    This is a class
-    """
-    pass
-    
 class MyList(list):
     """
     This is a function
