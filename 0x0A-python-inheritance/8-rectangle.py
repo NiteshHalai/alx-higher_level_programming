@@ -24,7 +24,7 @@ class BaseGeometry:
         except ValueError:
             raise ValueError(name + " must be greater than 0")
             
-class Rectangle(BaseGeometry)
+class Rectangle(BaseGeometry):
     """
     This is a class
     """
