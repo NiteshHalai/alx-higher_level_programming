@@ -10,6 +10,7 @@ class MyList(list):
     """
     
     def print_sorted(self):
+        """ This is my function """
         a = self.copy()
         print(sorted(a))
         return sorted(a)
