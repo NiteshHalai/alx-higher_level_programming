@@ -23,12 +23,13 @@ class BaseGeometry:
             raise TypeError(name + " must be an integer")
         except ValueError:
             raise ValueError(name + " must be greater than 0")
-            
+
+
 class Rectangle(BaseGeometry):
     """
     This is a class
     """
-    
+
     def __init__(self, width, height):
         self.__width = width
         self.__height = height
