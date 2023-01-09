@@ -43,7 +43,7 @@ class Rectangle(BaseGeometry):
         return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
 
 
- class Square(Rectangle):
+class Square(Rectangle):
     """
     This is a class
     """
