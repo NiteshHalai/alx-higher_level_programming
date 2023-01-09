@@ -22,4 +22,4 @@ class BaseGeometry:
         except TypeError:
             raise TypeError(name + " must be an integer")
         except ValueError:
-            raise ValueError(name " must be greater than 0")
+            raise ValueError(name + " must be greater than 0")
