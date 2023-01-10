@@ -12,5 +12,5 @@ def pascal_triangle(n):
     else:
         for i in range (0, n):
             rows.append(11**i)
-            print(rows)
+        print(rows)
         return rows
