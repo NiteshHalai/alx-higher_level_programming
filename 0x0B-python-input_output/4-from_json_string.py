@@ -8,4 +8,4 @@ import json
 
 def from_json_string(my_str):
     """Function description here"""
-    return json.load(my_obj)
+    return json.load(my_str)
