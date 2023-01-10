@@ -5,8 +5,10 @@
 
 def pascal_triangle(n):
     """Function description here"""
+
+    rows = []
     if n <= 0:
-        return []
+        return rows
     else:
         for i in range (n):
-            print([int(x) for x in str(11**i)])
+            rows.append(11**i)
