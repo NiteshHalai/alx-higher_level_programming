@@ -3,7 +3,7 @@
 """Function description here"""
 
 
-def write_file(filename="", 'a', text=""):
+def append_write(filename="", text=""):
     """Function description here"""
-    with open(filename, encoding="utf-8") as f:
+    with open(filename, access_mode="a", encoding="utf-8") as f:
         f.write(text)
