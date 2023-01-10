@@ -8,5 +8,5 @@ def pascal_triangle(n):
     if n <= 0:
         return []
     else:
-        for i in range n:
+        for i in range (n):
             print([int(x) for x in str(11**i)])
