@@ -19,4 +19,4 @@ class Student:
         if attrs is None:
             return self.__dict__
         else:
-            return {attr: __dict__[key] for attr in attrs}
+            return {attr: __dict__[attr] for attr in attrs}
