@@ -10,6 +10,6 @@ def pascal_triangle(n):
     if n <= 0:
         return rows
     else:
-        for i in range (n):
-            rows.extend(11**i)
+        for i in range (0, n):
+            rows.append(11**i)
         return rows
