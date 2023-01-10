@@ -6,6 +6,6 @@
 import json
 
 
-def to_json_string(my_obj):
+def from_json_string(my_str):
     """Function description here"""
-    return json.dumps(my_obj)
+    return json.load(my_obj)
