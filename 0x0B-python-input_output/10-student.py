@@ -18,5 +18,3 @@ class Student:
     def to_json(self, attrs=None):
         if attrs is None:
             return self.__dict__
-        else:
-            return {attr: __dict__[attr] for attr in attrs}
