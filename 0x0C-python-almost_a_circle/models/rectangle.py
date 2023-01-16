@@ -160,7 +160,7 @@ class Rectangle(Base):
             self.__x = attributes[3]
             self.__y = attributes[4]
             
-        else:
+        if len(args) == 0:
             print('HELLO')
             self.id = id
             self.__width = width
