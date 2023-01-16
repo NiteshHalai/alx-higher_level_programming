@@ -148,7 +148,7 @@ class Rectangle(Base):
     
     def update(self, *args):
         """Function description here"""
-        attributes = [self.__id, self.__width, self.__height, self.__x, self.__y]
+        attributes = [self.id, self.__width, self.__height, self.__x, self.__y]
         
         for i in range(len(args)):
             attributes[i] = args[i]
