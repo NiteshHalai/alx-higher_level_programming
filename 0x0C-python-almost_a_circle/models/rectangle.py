@@ -141,4 +141,4 @@ class Rectangle(Base):
             
     def __str__(self):
         """Function description here"""
-        return "[Rectangle] " + str(super().__init__(id)) + " " + str(self.__x) + "/" + str(self.__y) + " - " + str(self.__width) + "/" + str(self.__height)
+        return "[Rectangle] (" + str(self.id) + ") " + str(self.__x) + "/" + str(self.__y) + " - " + str(self.__width) + "/" + str(self.__height)
