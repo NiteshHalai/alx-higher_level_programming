@@ -161,5 +161,8 @@ class Rectangle(Base):
             self.__y = attributes[4]
             
         if len(args) == 0:
-            for key, val in kwargs.items():
-                self.__setattr__(key, val)
+            self.id = kwargs.get('id', self.id)
+            self.__width = kwargs.get('width', self.__width)
+            self.__height = kwargs.get('height', self.__height)
+            self.__x = kwargs.get('x', self.__x)
+            self.__y = kwargs.get('y', self.__y)
