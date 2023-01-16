@@ -12,7 +12,7 @@ class Rectangle(Base):
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        
+
         try:
             self.__width = width
             if width <= 0:
@@ -34,7 +34,7 @@ class Rectangle(Base):
             raise TypeError("height must be an integer")
         except ValueError:
             raise ValueError("height must be > 0")
-            
+
         try:
             self.__x = x
             if x < 0:
@@ -45,7 +45,7 @@ class Rectangle(Base):
             raise TypeError("x must be an integer")
         except ValueError:
             raise ValueError("x must be >= 0")
-            
+
         try:
             self.__y = y
             if y < 0:
@@ -126,3 +126,7 @@ class Rectangle(Base):
             raise TypeError("y must be an integer")
         except ValueError:
             raise ValueError("y must be >= 0")
+
+    def area(self):
+        self.area = self.__width * self.__height
+        return self.area
