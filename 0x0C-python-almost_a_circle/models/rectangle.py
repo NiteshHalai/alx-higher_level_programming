@@ -151,4 +151,4 @@ class Rectangle(Base):
         attributes = [self.__id, self.__width, self.__height, self.__x, self.__y]
         
         for i in range(len(args)):
-            attributes[i] = arg[i]
+            attributes[i] = args[i]
