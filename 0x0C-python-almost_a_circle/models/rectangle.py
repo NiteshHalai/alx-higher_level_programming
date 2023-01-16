@@ -133,6 +133,7 @@ class Rectangle(Base):
         return self.area
     
     def display(self):
+        """Function description here"""
         for j in range(self.__height):
             for i in range(self.__width):
                 print('#', end='')
