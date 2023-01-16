@@ -8,14 +8,13 @@ class Base:
     """
     This is a class
     """
+    __nb_objects = 0
 
     def __init__(self, id=None):
         
-        __nb_objects = 0
+        Base__nb_objects = Base__nb_objects + 1
         
-        __nb_objects = __nb_objects + 1
-        
-        if self.id == None:
-            self.id = self.__nb_objects
+        if self.id is None:
+            self.id = Base.__nb_objects
         else:
-            self.id = self.id
+            self.id = id
