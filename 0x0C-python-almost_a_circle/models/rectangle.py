@@ -131,7 +131,7 @@ class Rectangle(Base):
         """Function description here"""
         self.area = self.__width * self.__height
         return self.area
-    
+
     def display(self):
         """Function description here"""
         for x in range(self.__y):
@@ -141,11 +141,16 @@ class Rectangle(Base):
             for i in range(self.__width):
                 print('#', end='')
             print('')
-            
+
     def __str__(self):
         """Function description here"""
-        return "[Rectangle] (" + str(self.id) + ") " + str(self.__x) + "/" + str(self.__y) + " - " + str(self.__width) + "/" + str(self.__height)
-    
+        id1 = str(self.id)
+        x = str(self.__x)
+        y = str(self.__y)
+        w = str(self.__width)
+        h = str(self.__height)
+        return "[Rectangle] (" + id1 + ") " + x + "/" + y + " - " + w + "/" + h
+
     def update(self, *args, **kwargs):
         """Function description here"""
         if args is not None:
@@ -159,7 +164,7 @@ class Rectangle(Base):
             self.__height = attributes[2]
             self.__x = attributes[3]
             self.__y = attributes[4]
-            
+
         if len(args) == 0:
             self.id = kwargs.get('id', self.id)
             self.__width = kwargs.get('width', self.__width)
