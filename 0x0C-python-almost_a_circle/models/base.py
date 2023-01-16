@@ -8,9 +8,10 @@ class Base:
     """
     This is a class
     """
-    __nb_objects = 0
-    
+
     def __init__(self, id=None):
+        
+        __nb_objects = 0
         
         __nb_objects = __nb_objects + 1
         
