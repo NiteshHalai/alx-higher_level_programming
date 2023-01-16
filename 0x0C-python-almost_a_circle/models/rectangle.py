@@ -5,6 +5,7 @@ This is a class
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """
     This is a class
