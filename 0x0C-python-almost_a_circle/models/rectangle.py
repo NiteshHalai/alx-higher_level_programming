@@ -3,7 +3,7 @@
 This is a class
 """
 
-from models import base.Base
+from models import base
 
 class Rectangle(Base):
     """
