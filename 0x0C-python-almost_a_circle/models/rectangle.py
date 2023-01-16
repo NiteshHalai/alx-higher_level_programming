@@ -161,14 +161,8 @@ class Rectangle(Base):
             self.__y = attributes[4]
             
         if len(args) == 0:
-            print('HELLO')
-            if id is not None:
-                self.id = id
-            if width is not None:
-                self.__width = width
-            if height is not None:
-                self.__height = height
-            if x is not None:
-                self.__x = x
-            if y is not None:
-                self.__y = y   
+            self.id = kwargs.get('id', self.id)
+            self.__width = kwargs.get('width', self.__width)
+            self.__height = kwargs.get('height', self.__height)
+            self.__x = kwargs.get('x', self.__x)
+            self.__y = kwargs.get('y', self.__y)
