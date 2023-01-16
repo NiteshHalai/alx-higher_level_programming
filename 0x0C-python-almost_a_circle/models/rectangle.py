@@ -154,3 +154,8 @@ class Rectangle(Base):
             attributes[i] = args[i]
             
         print(attributes)
+        self.id = attributes[0]
+        self.__width = attributes[1]
+        self.__height = attributes[2]
+        self.__x = attributes[3]
+        self.__y = attributes[4]
