@@ -154,16 +154,16 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """Function description here"""
         if args is not None:
-            attributes = [self.id, self.__width, self.__height, self.__x, self.__y]
+            attr = [self.id, self.__width, self.__height, self.__x, self.__y]
 
             for i in range(len(args)):
-                attributes[i] = args[i]
+                attr[i] = args[i]
 
-            self.id = attributes[0]
-            self.__width = attributes[1]
-            self.__height = attributes[2]
-            self.__x = attributes[3]
-            self.__y = attributes[4]
+            self.id = attr[0]
+            self.__width = attr[1]
+            self.__height = attr[2]
+            self.__x = attr[3]
+            self.__y = attr[4]
 
         if len(args) == 0:
             self.id = kwargs.get('id', self.id)
