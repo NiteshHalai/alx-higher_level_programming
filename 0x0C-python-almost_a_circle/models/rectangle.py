@@ -152,3 +152,5 @@ class Rectangle(Base):
         
         for i in range(len(args)):
             attributes[i] = args[i]
+            
+        print(attributes)
