@@ -146,7 +146,7 @@ class Rectangle(Base):
         """Function description here"""
         return "[Rectangle] (" + str(self.id) + ") " + str(self.__x) + "/" + str(self.__y) + " - " + str(self.__width) + "/" + str(self.__height)
     
-    def update(self, *args, **kwargs)
+    def update(self, *args, **kwargs):
         """Function description here"""
         if args is not None:
             attributes = [self.id, self.__width, self.__height, self.__x, self.__y]
