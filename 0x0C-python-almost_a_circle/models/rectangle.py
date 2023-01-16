@@ -134,8 +134,11 @@ class Rectangle(Base):
     
     def display(self):
         """Function description here"""
+        for x in range(self.__y):
+            print('')
         for j in range(self.__height):
             for i in range(self.__width):
+                print(' ' * self.__x, end='')
                 print('#', end='')
             print('')
             
