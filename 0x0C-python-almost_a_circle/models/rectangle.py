@@ -12,10 +12,51 @@ class Rectangle(Base):
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        
+        try:
+            self.__width = width
+            if width <= 0:
+                raise ValueError
+            if type(width) is not int:
+                raise TypeError
+        except TypeError:
+            raise TypeError("width must be an integer")
+        except ValueError:
+            raise ValueError("width must be > 0")
+
+        try:
+            self.__height = height
+            if height <= 0:
+                raise ValueError
+            if type(height) is not int:
+                raise TypeError
+        except TypeError:
+            raise TypeError("height must be an integer")
+        except ValueError:
+            raise ValueError("height must be > 0")
+            
+        try:
+            self.__x = x
+            if x < 0:
+                raise ValueError
+            if type(x) is not int:
+                raise TypeError
+        except TypeError:
+            raise TypeError("x must be an integer")
+        except ValueError:
+            raise ValueError("x must be >= 0")
+            
+        try:
+            self.__y = y
+            if y < 0:
+                raise ValueError
+            if type(y) is not int:
+                raise TypeError
+        except TypeError:
+            raise TypeError("y must be an integer")
+        except ValueError:
+            raise ValueError("y must be >= 0")
+
         super().__init__(id)
 
     @property
@@ -24,7 +65,16 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        self.__width = value
+        try:
+            self.__width = width
+            if width <= 0:
+                raise ValueError
+            if type(width) is not int:
+                raise TypeError
+        except TypeError:
+            raise TypeError("width must be an integer")
+        except ValueError:
+            raise ValueError("width must be > 0")
 
     @property
     def height(self):
@@ -32,7 +82,16 @@ class Rectangle(Base):
 
     @height.setter
     def width(self, value):
-        self.__height = value
+        try:
+            self.__height = height
+            if height <= 0:
+                raise ValueError
+            if type(height) is not int:
+                raise TypeError
+        except TypeError:
+            raise TypeError("height must be an integer")
+        except ValueError:
+            raise ValueError("height must be > 0")
 
     @property
     def x(self):
@@ -40,7 +99,16 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        self.__x = value
+        try:
+            self.__x = x
+            if x < 0:
+                raise ValueError
+            if type(x) is not int:
+                raise TypeError
+        except TypeError:
+            raise TypeError("x must be an integer")
+        except ValueError:
+            raise ValueError("x must be >= 0")
 
     @property
     def y(self):
@@ -48,4 +116,13 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        self.__y = value
+        try:
+            self.__y = y
+            if y < 0:
+                raise ValueError
+            if type(y) is not int:
+                raise TypeError
+        except TypeError:
+            raise TypeError("y must be an integer")
+        except ValueError:
+            raise ValueError("y must be >= 0")
