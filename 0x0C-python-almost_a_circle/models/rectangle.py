@@ -145,3 +145,16 @@ class Rectangle(Base):
     def __str__(self):
         """Function description here"""
         return "[Rectangle] (" + str(self.id) + ") " + str(self.__x) + "/" + str(self.__y) + " - " + str(self.__width) + "/" + str(self.__height)
+    
+    def update(self, *args):
+        """Function description here"""
+        if arg[0] is not None:
+            self.__id = arg[0]
+        if arg[1] is not None:
+            self.__width = arg[1]
+        if arg[2] is not None:
+            self.__height = arg[2]  
+        if arg[3] is not None:
+            self.__x = arg[3] 
+        if arg[4] is not None:
+            self.__y = arg[4] 
