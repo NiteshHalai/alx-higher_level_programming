@@ -162,8 +162,10 @@ class Rectangle(Base):
             
         if len(args) == 0:
             print('HELLO')
-            self.id = id
+            if id is not None:
+                self.id = id
             self.__width = width
-            self.__height = height
+            if id is not None:
+                self.__height = height
             self.__x = x
             self.__y = y   
