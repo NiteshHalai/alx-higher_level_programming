@@ -161,6 +161,7 @@ class Rectangle(Base):
             self.__y = attributes[4]
             
         if args is None:
+            print('HELLO')
             self.id = id
             self.__width = width
             self.__height = height
