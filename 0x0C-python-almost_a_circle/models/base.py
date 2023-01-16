@@ -12,7 +12,7 @@ class Base:
 
     def __init__(self, id=None):
         
-        Base__nb_objects = Base__nb_objects + 1
+        Base.__nb_objects = Base.__nb_objects + 1
         
         if self.id is None:
             self.id = Base.__nb_objects
