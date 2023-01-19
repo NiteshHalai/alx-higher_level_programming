@@ -36,7 +36,7 @@ class Base:
         '''Just filling up some space'''
         pass
 
-    def load_from_file(cls):(cls, list_objs):  
+    def load_from_file(cls)  
         '''Just filling up some space'''
         pass
 
