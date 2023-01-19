@@ -20,6 +20,10 @@ class Base:
         else:
             self.id = id
 
+    def load_from_file(cls):(cls, list_objs):  
+        '''Just filling up some space'''
+        pass
+
     def save_to_file_csv(cls, list_objs):  
         '''Just filling up some space'''
         pass
