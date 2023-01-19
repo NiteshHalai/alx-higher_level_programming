@@ -40,11 +40,11 @@ class Base:
         '''Just filling up some space'''
         pass
 
-    def save_to_file_csv(cls, list_objs):  
+    def save_to_file_csv(cls, list_objs):
         '''Just filling up some space'''
         pass
 
-    def load_from_file_csv(cls): 
+    def load_from_file_csv(cls):
         '''Just filling up some space'''
         pass
 
