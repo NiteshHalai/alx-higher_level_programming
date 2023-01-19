@@ -22,15 +22,15 @@ class Square(Rectangle):
         w = str(self.width)
         return "[Square] (" + id1 + ") " + x + "/" + y + " - " + w
 
-        @property
-        def size(self):
+    @property
+    def size(self):
             return self.width
 
-        @height.setter
-        def width(self, value):
-            self.width = value
-            self.height = value
+    @height.setter
+    def width(self, value):
+        self.width = value
+        self.height = value
 
-        def to_dictionary(self):
-            """Function description here"""
+    def to_dictionary(self):
+        """Function description here"""
             pass
