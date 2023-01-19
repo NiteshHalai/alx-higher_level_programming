@@ -27,7 +27,7 @@ class Square(Rectangle):
         """Function description here"""
         return self.width
 
-    @height.setter
+    @size.setter
     def width(self, value):
         """Function description here"""
         self.width = value
