@@ -23,11 +23,11 @@ class Base:
     def save_to_file_csv(cls, list_objs):  
         '''Just filling up some space'''
         pass
-    
+
     def load_from_file_csv(cls): 
         '''Just filling up some space'''
         pass
-            
+
     @staticmethod
     def draw(list_rectangles, list_squares):
         '''Just filling up some space'''
