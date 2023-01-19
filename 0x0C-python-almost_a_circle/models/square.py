@@ -30,3 +30,7 @@ class Square(Rectangle):
         def width(self, value):
             self.width = value
             self.height = value
+
+        def to_dictionary(self):
+            """Function description here"""
+            pass
