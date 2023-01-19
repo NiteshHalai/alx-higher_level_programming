@@ -172,6 +172,6 @@ class Rectangle(Base):
             self.__x = kwargs.get('x', self.__x)
             self.__y = kwargs.get('y', self.__y)
 
-        def to_dictionary(self):
-            """Function description here"""
-            pass
+    def to_dictionary(self):
+        """Function description here"""
+        pass
