@@ -20,6 +20,22 @@ class Base:
         else:
             self.id = id
 
+    def to_json_string(list_dictionaries):
+        '''Just filling up some space'''
+        pass
+
+    def save_to_file(cls, list_objs):
+        '''Just filling up some space'''
+        pass
+
+    def from_json_string(json_string)
+        '''Just filling up some space'''
+        pass
+
+    def create(cls, **dictionary):
+        '''Just filling up some space'''
+        pass
+
     def load_from_file(cls):(cls, list_objs):  
         '''Just filling up some space'''
         pass
