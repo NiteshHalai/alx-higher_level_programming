@@ -28,7 +28,7 @@ class Base:
         '''Just filling up some space'''
         pass
 
-    def from_json_string(json_string)
+    def from_json_string(json_string):
         '''Just filling up some space'''
         pass
 
