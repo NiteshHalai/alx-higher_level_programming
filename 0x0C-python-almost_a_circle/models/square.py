@@ -31,7 +31,6 @@ class Square(Rectangle):
     def size(self, value):
         """Function description here"""
         self.width = value
-        self.height = value
 
     def to_dictionary(self):
         """Function description here"""
