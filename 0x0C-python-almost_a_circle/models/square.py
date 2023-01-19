@@ -24,13 +24,15 @@ class Square(Rectangle):
 
     @property
     def size(self):
-            return self.width
+        """Function description here"""
+        return self.width
 
     @height.setter
     def width(self, value):
+        """Function description here"""
         self.width = value
         self.height = value
 
     def to_dictionary(self):
         """Function description here"""
-            pass
+        pass
