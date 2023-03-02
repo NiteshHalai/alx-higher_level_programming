@@ -1,2 +1,2 @@
 -- A generaric comment
-DESCRIBE first_table;
+SELECT * from first_table;
